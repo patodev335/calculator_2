@@ -20,7 +20,7 @@ export default function Calculator(){
     return(
         <div className="calculator">
             <Screen written={written}></Screen>
-            <div>
+            <div className='btn-container'>
                 {
                     button_names.map( name => {
                         let btn = <button id={`${name}`} onClick={()=>
